@@ -37,7 +37,7 @@ export default async function handler(req, res) {
           </body>
         </html>`;
     },
-    graphqlEndpoint: "/api/graphql",
+    graphqlEndpoint: "/.netlify/functions/graphql",
     schema: keystoneContext.graphql.schema,
     context: ({ req, res }) => keystoneContext.withRequest(req, res),
     multipart: false,
